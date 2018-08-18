@@ -7,6 +7,9 @@ use Illuminate\Support\Facades\Auth;
 use App\Post;
 use Storage;
 
+use App\Comment;
+
+
 class PostsController extends Controller
 {
   
@@ -17,8 +20,11 @@ class PostsController extends Controller
      */
     public function index()
     {
+        
         $posts = Post::where('user_id', Auth::id())->where('publicado',false)->orderBy('updated_at','desc')->get();
+
         return view('posts/showBorrador', compact('posts'));
+       
     }
 
     /**
