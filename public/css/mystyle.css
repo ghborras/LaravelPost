@@ -86,10 +86,22 @@ p.titlecom {
 	margin:auto;
 }
 
-.imgedit {
-	margin-left:165px;
-	margin-bottom: 20px;
 
+
+.ficha {
+	width: 75%;
+	display:flex;
+	flex-direction: row;
+	justify-content: space-around;
+	border: 1px solid #c5c0bf;
+    border-radius: 5px;
+    margin:auto;
+	margin-top: 50px;
+	padding: 30px;
+}
+
+#datos {
+	width: 60%;
 }
 
 .list-group-item {
